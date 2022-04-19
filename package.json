@@ -8,21 +8,20 @@
   "license": "MIT",
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-      "prettier --config .prettierrc.js --write",
-      "git add"
+      "prettier --config .prettierrc.js --write"
     ]
   },
   "scripts": {
-    "precommit": "lint-staged"
+    "prepare": "husky install"
   },
   "peerDependencies": {
-    "eslint": "^7.29.0",
+    "eslint": "^8.9.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.11.0"
   },
   "devDependencies": {
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1"
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.3",
+    "prettier": "^2.5.1"
   }
 }
